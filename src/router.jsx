@@ -11,6 +11,7 @@ export default function Router(){
         <Routes>
           <Route element={< AuthLayout/>}>
             <Route path="/auth/login" element={<LoginViewForm />} />
+            <Route path="*" element={<LoginViewForm />} />
           </Route>
           <Route element={< DashboardLayout/>}>
             <Route path="/dashboard" element={<DashboardView />} />
